@@ -1,0 +1,79 @@
+/*display grid for gifs div*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    background-image: url(./images/hd\ background\ 1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    background-image: linear-gradient(to left, transparent, violet, indigo, blue, green, yellow, orange, red, transparent);
+    text-align: center;
+    height: 75px;
+    font-size: 50px;
+    font-family: 'Bebas Neue';
+    letter-spacing: 10px;
+    width: 700px;
+    margin: auto;
+    border-radius: 10px;
+   animation: colorchange 5s infinite alternate;
+   padding-top: 2%;
+}
+@keyframes colorchange{
+    0% {color: red;}
+    25% {color: lime;}
+    50% {color: blue;}
+    75% {color: fuchsia;}
+    100% {color: yellow;}
+
+}
+.gifContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 5% 5%;
+}
+img{
+    width: 275px;
+    height: 200px;
+}
+.formBox{
+   position: relative; 
+    
+}
+#searchBox{
+    width: 240px;
+    height: 40px;
+    font-size: 30px;
+    font-family: 'Bebas Neue';
+    letter-spacing: 4px;
+    text-align: center;
+    color: white;
+    background: none;
+    border: solid white;
+    border-radius: 5%;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+#searchButton{
+    width: 150px;
+    height: 70px;
+   position: absolute;
+   top: 18px;
+   left: 25%;
+   font-size: 30px;
+    font-family: 'Bebas Neue';
+    letter-spacing: 4px;
+    background: none;
+    border: solid white;
+    border-radius: 5%;
+    color: gray;
+    transition: background-color .25s ease-in-out;
+}
+
+#searchButton:hover{
+    background-color: hotpink;
+    transform: scale(.8);
+    
+}
